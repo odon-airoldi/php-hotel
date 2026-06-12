@@ -96,7 +96,7 @@
 
     <ul>
         <?php foreach ( $hotel as $key => $value ) : ?>
-            <li><?php echo $key . " " . $value; ?></li>
+            <li><?php echo $key . " " . ($key == "parking" ? ($value ? "Si" : "No") : $value); ?></li>
         <?php endforeach; ?>
     </ul>
 
